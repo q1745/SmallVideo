@@ -1,0 +1,12 @@
+ext{
+    dependenciesVersion=[
+
+    ]
+    versions=[
+            compilesdk:30,
+            minsdk:21,
+            targetsdk:30,
+            versioncode:1,
+            versionname:"1.0"
+    ]
+}
