@@ -4,6 +4,7 @@ plugins {
 }
 
 def allVersion=rootProject.ext.versions
+def configs=rootProject.ext.dependenciesConfig
 
 android {
 
@@ -45,4 +46,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(path: ':Resources')
+
+    //BottomNavigationBar
+    implementation configs.bottomNavigationBar
 }

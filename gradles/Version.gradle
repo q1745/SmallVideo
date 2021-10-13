@@ -1,5 +1,7 @@
 ext{
     dependenciesVersion=[
+            //BottomNavigationBar
+            bottomNavigationBar:"2.0.5",
 
     ]
     versions=[

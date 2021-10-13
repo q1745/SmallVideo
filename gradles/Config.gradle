@@ -1,6 +1,7 @@
 def version=rootProject.ext.dependenciesVersion
 ext{
     dependenciesConfig=[
-
+            //BottomNavigationBar
+            bottomNavigationBar:"com.ashokvarma.android:bottom-navigation-bar:${version.bottomNavigationBar}"
     ]
 }
