@@ -2,6 +2,17 @@ def version=rootProject.ext.dependenciesVersion
 ext{
     dependenciesConfig=[
             //BottomNavigationBar
-            bottomNavigationBar:"com.ashokvarma.android:bottom-navigation-bar:${version.bottomNavigationBar}"
+            bottomNavigationBar:"com.ashokvarma.android:bottom-navigation-bar:${version.bottomNavigationBar}",
+
+             retrofit:"com.squareup.retrofit2:retrofit:${version.retrofitNumber}",
+
+
+            rxjava: "com.squareup.retrofit2:adapter-rxjava2:${version.rxjavaNumber}",
+
+            converter_gson: "com.squareup.retrofit2:converter-gson:${version.gsonNumber}",
+
+            okhttp: "com.squareup.okhttp3:okhttp:${version.okhttpNumber}",
+
+            interceptor: "com.squareup.okhttp3:logging-interceptor:${version.okhttp_interceptor}"
     ]
 }

@@ -2,7 +2,11 @@ ext{
     dependenciesVersion=[
             //BottomNavigationBar
             bottomNavigationBar:"2.0.5",
-
+            retrofitNumber:"2.4.0",
+            rxjavaNumber:"2.3.0",
+            gsonNumber:"2.4.0",
+            okhttpNumber:"3.4.1",
+            okhttp_interceptor:"3.9.1"
     ]
     versions=[
             compilesdk:30,
