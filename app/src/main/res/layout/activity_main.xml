@@ -19,14 +19,19 @@
         android:layout_height="56dp">
 
         <RadioButton
-            android:layout_width="82dp"
-            android:layout_height="30dp"
+            android:textColor="#97000000"
+            android:id="@+id/rb_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/text_size_21"
             android:layout_marginRight="@dimen/text_size_21"
             android:button="@null"
             android:gravity="center"
+            android:checked="true"
             android:text="@string/index" />
         <RadioButton
+            android:textColor="#97000000"
+            android:id="@+id/rb_sofa"
             android:layout_marginLeft="@dimen/text_size_21"
             android:layout_marginRight="@dimen/text_size_21"
             android:button="@null"
@@ -35,12 +40,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
+            android:id="@+id/rb_release"
             android:layout_marginLeft="@dimen/text_size_21"
             android:layout_marginRight="@dimen/text_size_21"
             android:src="@mipmap/icon_tab_publish"
             android:layout_width="45dp"
             android:layout_height="45dp"/>
         <RadioButton
+            android:textColor="#97000000"
+            android:id="@+id/rb_find"
             android:layout_marginLeft="@dimen/text_size_21"
             android:layout_marginRight="@dimen/text_size_21"
             android:button="@null"
@@ -49,6 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <RadioButton
+            android:textColor="#97000000"
+            android:id="@+id/rb_mine"
             android:layout_marginLeft="@dimen/text_size_21"
             android:button="@null"
             android:gravity="center"
