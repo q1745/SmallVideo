@@ -8,6 +8,7 @@ import android.view.View
 import androidx.viewpager.widget.ViewPager
 import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ashokvarma.bottomnavigation.BottomNavigationItem
+import com.shuke.logger.Logger
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initView();
+
+
+        //Log工具
+        Logger.Build().setLog("志强是沙雕").setTag("志强沙雕").build().d()
 
     }
 

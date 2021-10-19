@@ -10,3 +10,4 @@ rootProject.name = "SmallVideo"
 include ':app'
 include ':Resources'
 include ':Common'
+include ':Logger'
