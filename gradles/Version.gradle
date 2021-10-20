@@ -6,7 +6,9 @@ ext{
             rxjavaNumber:"2.3.0",
             gsonNumber:"2.4.0",
             okhttpNumber:"3.4.1",
-            okhttp_interceptor:"3.9.1"
+            okhttp_interceptor:"3.9.1",
+            arouter:"1.5.0",
+            arouterKapt:"1.2.2"
     ]
     versions=[
             compilesdk:30,

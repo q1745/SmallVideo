@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.alibaba.arouter'
 }
 
 def allVersion=rootProject.ext.versions
@@ -18,6 +21,13 @@ android {
         versionName allVersion.versionname
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //ARouter
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
     }
 
     buildTypes {
@@ -52,4 +62,7 @@ dependencies {
 
     //BottomNavigationBar
     implementation configs.bottomNavigationBar
+    //ARouter注解处理器
+    kapt configs.arouterKapt
+
 }
