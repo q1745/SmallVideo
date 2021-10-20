@@ -2,13 +2,18 @@ ext{
     dependenciesVersion=[
             //BottomNavigationBar
             bottomNavigationBar:"2.0.5",
-
+            retrofitNumber:"2.4.0",
+            rxjavaNumber:"2.3.0",
+            gsonNumber:"2.4.0",
+            okhttpNumber:"3.4.1",
+            okhttp_interceptor:"3.9.1"
     ]
     versions=[
             compilesdk:30,
             minsdk:21,
             targetsdk:30,
             versioncode:1,
-            versionname:"1.0"
+            versionname:"1.0",
+            buildTools:"30.0.3"
     ]
 }
