@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/Common" />
             <option value="$PROJECT_DIR$/Net" />
             <option value="$PROJECT_DIR$/Resources" />
+            <option value="$PROJECT_DIR$/Utils" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
