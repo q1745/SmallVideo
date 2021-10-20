@@ -11,9 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.ashokvarma.bottomnavigation.BottomNavigationBar
-import com.ashokvarma.bottomnavigation.BottomNavigationItem
-import com.shuke.logger.Logger
+import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -36,12 +34,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         initView();
 
-<<<<<<< HEAD
 
         //Log工具
-        Logger.Build().setLog("志强是沙雕").setTag("志强沙雕").build().d()
+        //Logger.Build().setLog("志强是沙雕").setTag("志强沙雕").build().d()
 
-=======
         //默认选中首页
         setDrawable(R.mipmap.index_true,rb_index)
         rb_index.setTextColor(Color.parseColor("#DF000000"))
@@ -69,7 +65,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setDrawable(R.mipmap.find_false,rb_find);
 
         setDrawable(R.mipmap.mine_false,rb_mine);
->>>>>>> a4b281925e56a99c3187c5b5124b5a192c3c0aa9
     }
 
     private fun initView() {
