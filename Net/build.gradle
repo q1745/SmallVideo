@@ -7,14 +7,14 @@ def allVersion=rootProject.ext.versions
 def configs=rootProject.ext.dependenciesConfig
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion allVersion.compilesdk
+    buildToolsVersion allVersion.buildTools
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion allVersion.minsdk
+        targetSdkVersion allVersion.targetsdk
+        versionCode allVersion.versioncode
+        versionName allVersion.versionname
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -44,6 +44,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
     implementation configs.retrofit
     implementation configs.rxjava
     implementation configs.converter_gson

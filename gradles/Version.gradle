@@ -13,6 +13,7 @@ ext{
             minsdk:21,
             targetsdk:30,
             versioncode:1,
-            versionname:"1.0"
+            versionname:"1.0",
+            buildTools:"30.0.3"
     ]
 }
