@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.alibaba.arouter'
 }
 
 def allVersion=rootProject.ext.versions
@@ -18,6 +21,13 @@ android {
         versionName allVersion.versionname
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //ARouter
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
     }
 
     buildTypes {
@@ -41,6 +51,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(path: ':Common')
+    implementation project(path: ':Logger')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
@@ -50,4 +62,7 @@ dependencies {
 
     //BottomNavigationBar
     implementation configs.bottomNavigationBar
+    //ARouter注解处理器
+    kapt configs.arouterKapt
+
 }

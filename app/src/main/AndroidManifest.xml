@@ -3,6 +3,7 @@
     package="com.example.zz">
 
     <application
+        android:name=".PPJokeApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon_jetpack"
         android:label="@string/app_name"
@@ -19,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TestActivity" android:exported="true"/>
     </application>
 
 </manifest>
