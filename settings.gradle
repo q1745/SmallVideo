@@ -12,4 +12,9 @@ include ':Resources'
 include ':Common'
 include ':Logger'
 include ':Net'
+
+include ':MVVMCore'
+
 include ':Utils'
+
+include ':ID'
