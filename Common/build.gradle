@@ -44,4 +44,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //ARouter
     api configs.arouter
+    //字节跳动->穿山甲广告
+    api configs.betydance
 }

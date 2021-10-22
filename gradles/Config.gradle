@@ -9,6 +9,7 @@ ext{
             okhttp: "com.squareup.okhttp3:okhttp:${version.okhttpNumber}",
             interceptor: "com.squareup.okhttp3:logging-interceptor:${version.okhttp_interceptor}",
             arouter:"com.alibaba:arouter-api:${version.arouter}",
-            arouterKapt:"com.alibaba:arouter-compiler:${version.arouterKapt}"
+            arouterKapt:"com.alibaba:arouter-compiler:${version.arouterKapt}",
+            betydance:"com.pangle.cn:ads-sdk-pro:${version.betydance}"
     ]
 }

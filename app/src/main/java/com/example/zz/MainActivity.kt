@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         //Log工具
         //Logger.Build().setLog("志强是沙雕").setTag("志强沙雕").build().d()
-
+        
         //默认选中首页
         setDrawable(R.mipmap.index_true,rb_index)
         rb_index.setTextColor(Color.parseColor("#DF000000"))
