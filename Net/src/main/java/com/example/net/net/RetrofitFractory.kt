@@ -18,7 +18,7 @@ class RetrofitFractory {
 
     init {
         retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("http://123.56.232.18:8080/serverdemo")
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .client(createOkHttpClient())
